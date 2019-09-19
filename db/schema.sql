@@ -29,6 +29,6 @@ CREATE TABLE tasks (
 );
 
 -- Insert a set of records.
-INSERT INTO tasks (task) VALUES ('Breakfast Burger');
-INSERT INTO tasks (task) VALUES ('BLTO Burger w/cheese/mushrooms or without');
-INSERT INTO tasks (task) VALUES ('Veggie Burger');
+INSERT INTO tasks (burger_name) VALUES ('Breakfast Burger');
+INSERT INTO tasks (burger_name) VALUES ('BLTO Burger w/cheese/mushrooms or without');
+INSERT INTO tasks (burger_name) VALUES ('Veggie Burger');
