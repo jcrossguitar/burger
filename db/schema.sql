@@ -10,7 +10,7 @@ To run this file, we do the following in our Terminal:
 
 */
 
--- Drops the task_saver_db if it already exists --
+-- Drops the db if it already exists --
 DROP DATABASE IF EXISTS burgers_db;
 
 -- Create the database task_saver_db and specified it for use.
@@ -27,8 +27,3 @@ CREATE TABLE tasks (
   mushrooms BOOLEAN 
   PRIMARY KEY (id)
 );
-
--- Insert a set of records.
-INSERT INTO tasks (burger_name) VALUES ('Breakfast Burger');
-INSERT INTO tasks (burger_name) VALUES ('BLTO Burger w/cheese/mushrooms or without');
-INSERT INTO tasks (burger_name) VALUES ('Veggie Burger');
