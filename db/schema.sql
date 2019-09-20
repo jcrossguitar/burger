@@ -20,10 +20,10 @@ USE burgers_db;
 
 -- Create the table tasks.
 CREATE TABLE tasks (
-  id int NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   burger_name varchar(255) NOT NULL,
   devoured BOOLEAN,
-  cheese BOOLEAN,
-  mushrooms BOOLEAN 
+  toppings INT(1),
+  price INT 5.99
   PRIMARY KEY (id)
 );
