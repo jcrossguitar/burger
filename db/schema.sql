@@ -22,7 +22,7 @@ USE burgers_db;
 CREATE TABLE tasks (
   id INT NOT NULL AUTO_INCREMENT,
   burger_name varchar(255) NOT NULL,
-  devoured BOOLEAN,
+  devoured BOOLEAN DEFAULT false,
   toppings INT(1),
   price INT 
   PRIMARY KEY (id)
