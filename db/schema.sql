@@ -24,6 +24,6 @@ CREATE TABLE tasks (
   burger_name varchar(255) NOT NULL,
   devoured BOOLEAN,
   toppings INT(1),
-  price INT 5.99
+  price INT 
   PRIMARY KEY (id)
 );
