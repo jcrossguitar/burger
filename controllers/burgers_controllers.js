@@ -10,7 +10,7 @@ router.get("/", function(req, res) {
   res.redirect("/burgers");
 });
 
-  router.get("burgers", function(req, res) {
+  router.get("/burgers", function(req, res) {
 
   burger.all(function(data) {
     var hbsObject = {
@@ -21,7 +21,7 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/burger", function(req, res) {
+router.post("/burgers/create", function(req, res) {
   cat.create([
     "burger_name", "devoured", "toppings", "price"
   ], [

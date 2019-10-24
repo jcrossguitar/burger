@@ -1,23 +1,59 @@
-<h1>Order a Burger</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 text-center" id="top-bar">
+      <img src="/public/assets/img/burger.png"/>
+      <h1> If you like this, you have a problem! </h1>
+    </div>
+    <div class="col-md-2" class="task">
+      <div class="row">
+            <ul>
+          {{#each tasks}}
+            {{#unless this.devoured}}
+          	<div class="col-md-9 text-center">
+					  <pre>{{this.id}}. {{this.burger_name}}
+					  </pre>
+				</div>
+				<div class="col-md-12 text-center">
+					<form class="devour-form button-size">
+						<input input type="hidden" class="burger_id" type="text" value={{this.id}}><br>
+						<button type="submit" class="btn btn-default">Devour it!</button>
+					</form>
+				</div>
+				  {{/unless}}
+			  {{/each}}
+  	    {{!-- <li>
+  	      <p>ID: {{this.id}}</p>
+          <p>Burger: {{this.burger_name}}</p>
+          <p>Devoured: {{this.devoured}}</p>
+          <p>Toppings: {{this.toppings}}</p>
+          <p>Price: {{this.price}}</p>
+  	    </li>
+      {{/each}}
+    </ul> --}}
+      </div>
+    </div>
+  </div>
 
-<h3>Add a burger to the list</h3>
-
-<ul>
-  {{#each tasks}}
-  	<li>
-  	   <p>ID: {{this.id}}</p>
-       <p>Burger: {{this.burger_name}}</p>
-       <p>Devoured: {{this.devoured}}</p>
-       <p>Toppings: {{this.toppings}}</p>
-       <p>Price: {{this.price}}</p>
+</div>
 
 
-  	</li>
-  {{/each}}
-</ul>
 
-<form action="/" method="POST">
-	<textarea type="text" name="task"></textarea>
 
-	<button type="submit">Submit</button>
-</form>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center enter_section">
+			<form action="/burgers/create" method="POST">
+				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+      <h1>Order a Burger</h1>
+			<h3>Enter a burger you want to eat and then click the "Submit" button.</h3>
+		</div>
+	</div>
+</div>
+    {{!-- <form action="/" method="POST">
+	    <textarea type="text" name="task"></textarea>
+
+	    <button type="submit">Submit</button>
+    </form> --}}
