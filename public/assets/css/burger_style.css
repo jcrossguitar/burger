@@ -3,8 +3,9 @@ body {
     height: 900px;
     background-color: #fc6;
     background-image: url("assets/img/burger.png");
-      background-repeat:no-repeaat;
+      background-repeat:no-repeat;
       background-size:cover;
+      opacity: .5;
   }
   
   #top-bar {
