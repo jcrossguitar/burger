@@ -6,7 +6,7 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-
+DROP TABLE IF EXISTS burgers;
 
 -- Create the table burgers.
 CREATE TABLE burgers (
