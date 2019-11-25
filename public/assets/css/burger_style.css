@@ -5,7 +5,6 @@ body {
     background-image: url("assets/img/burger.png");
       background-repeat:no-repeat;
       background-size:cover;
-      opacity: .5;
   }
   
   #top-bar {
